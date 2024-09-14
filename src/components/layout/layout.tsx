@@ -12,7 +12,7 @@ import {
 } from "antd";
 
 import { Layout as AntLayout } from "antd";
-import logoWhite from "../../img/logoWhite.png";
+import logoWhite from "../../assets/Vector.png";
 import { GiShoppingCart } from "react-icons/gi";
 import { PiUserCircleThin } from "react-icons/pi";
 import { CiSearch } from "react-icons/ci";
@@ -28,7 +28,7 @@ import { SiMastercard } from "react-icons/si";
 import { RiVisaLine } from "react-icons/ri";
 import { GrAmex } from "react-icons/gr";
 import HomePage from "../../page/homepage";
-import img1 from "../../img/logo.png";
+import img1 from "../../assets/logoBlack.png";
 
 const { Header, Content, Footer } = AntLayout;
 
