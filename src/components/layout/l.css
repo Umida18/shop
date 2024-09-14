@@ -1,0 +1,27 @@
+:where(.css-dev-only-do-not-override-qnu6hi).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after,
+:where(.css-dev-only-do-not-override-qnu6hi).ant-menu-light
+  > .ant-menu.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after {
+  border-bottom-width: 0px !important;
+  border-bottom-color: none !important;
+  color: #0e1422 !important;
+}
+/* 
+.ant-menu-item,
+.ant-menu-submenu-title {
+  color: #5c5f6a !important;
+  font-size: 14px !important;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800 !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+  color: #0e1422 !important;
+} */
