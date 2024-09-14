@@ -29,6 +29,7 @@ import { RiVisaLine } from "react-icons/ri";
 import { GrAmex } from "react-icons/gr";
 import HomePage from "../../page/homepage";
 import img1 from "../../assets/logoBlack.png";
+import { Outlet } from "react-router-dom";
 
 const { Header, Content, Footer } = AntLayout;
 
@@ -250,7 +251,8 @@ const Layout = () => {
           alignItems: "center",
         }}
       >
-        <HomePage />
+        {/* <HomePage /> */}
+        <Outlet />
       </Content>
       <Footer
         style={{

@@ -9,9 +9,15 @@ import img7 from "../assets/Image(3).png";
 import img8 from "../assets/Category Image.png";
 import { ButtonPrimary } from "../components/components";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+import Listing from "./listing";
 
 const { Title, Text } = Typography;
 const HomePage = () => {
+  const navigate = useNavigate();
+  const toListingPage = () => {
+    navigate("./listing");
+  };
   return (
     <div style={{ width: "100%" }}>
       <div
@@ -66,17 +72,27 @@ const HomePage = () => {
                 style={{
                   fontSize: "14px",
                   color: "#474B57",
-                  marginBottom: "0px",
+                  display: "flex",
+                  marginBottom: "30px",
                 }}
               >
                 Discover Our Newest Collection Today.
               </Text>
-              <ButtonPrimary>
+              <Button
+                style={{
+                  backgroundColor: "#0E1422",
+                  paddingInline: "24px",
+                  paddingBlock: "12px",
+                  color: "white",
+                  height: "44px",
+                }}
+                onClick={toListingPage}
+              >
                 View Collection
                 <span style={{ marginInline: "5px" }}>
                   <FaArrowRightLong style={{ fontSize: "16px" }} />
                 </span>
-              </ButtonPrimary>
+              </Button>
             </Space>
           </Col>
           <Col
@@ -89,7 +105,10 @@ const HomePage = () => {
               alignItems: "flex-end",
             }}
           >
-            <Space direction="vertical">
+            <Space
+              direction="vertical"
+              style={{ display: "flex", position: "relative", top: "30px" }}
+            >
               <img
                 style={{ position: "relative", top: "30px" }}
                 src={img3}
@@ -107,7 +126,7 @@ const HomePage = () => {
                   width: "255px",
                   height: "382px",
                   position: "absolute",
-                  top: 0,
+                  top: 5,
                   right: 0,
                 }}
                 src={img1}
