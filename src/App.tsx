@@ -1,5 +1,11 @@
+import Products from "./pages/products";
+
 function App() {
-  return <>salom</>;
+  return (
+    <>
+      <Products />
+    </>
+  );
 }
 
 export default App;
